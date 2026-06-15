@@ -2,6 +2,29 @@
 
 <html lang="uk">
 
+<style>
+  .button-container {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      max-width: 350px;
+      margin: 20px auto;
+  }
+  .btn {
+      display: block;
+      text-align: center;
+      padding: 12px 24px;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      border: none; /* для кнопки-тегу */
+      cursor: pointer;
+  }
+  .btn-green { background-color: #4CAF50; color: white; }
+  .btn-blue { background-color: #4A90E2; color: white; }
+</style>
 <head>
 
     <meta charset="UTF-8">
@@ -223,6 +246,10 @@
         // Завантаження української версії при старті
 
         updateContent('uk');
+<div class="button-container">
+    <a href="#" class="btn btn-green">Enroll to the course</a>
+    <a href="#" class="btn btn-blue">Змінити мову / Change Language</a>
+</div>
 
     </script>
 
